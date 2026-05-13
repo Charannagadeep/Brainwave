@@ -30,9 +30,6 @@ brainwave/
 ├── evaluate.py            # subject-dependent and subject-independent eval
 ├── visualize.py           # attention weights + spatial filter plots
 ├── run_all.py             # runs the full experiment pipeline end-to-end
-├── data/                  # downloaded EDF files go here (auto-created)
-├── checkpoints/           # saved model weights go here (auto-created)
-└── results/               # CSV result files + figures go here (auto-created)
 ```
 
 ---
