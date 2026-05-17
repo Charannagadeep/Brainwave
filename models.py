@@ -339,7 +339,6 @@ def count_parameters(model: nn.Module) -> int:
     """Count trainable parameters."""
     return sum(p.numel() for p in model.parameters() if p.requires_grad)
 
-
 if __name__ == "__main__":
     # Quick sanity check — run each model on a dummy batch
     x = torch.randn(4, 64, 480)
@@ -349,3 +348,4 @@ if __name__ == "__main__":
         logits = model(x)
         n_params = count_parameters(model)
         print(f"{name:15s} | output: {tuple(logits.shape)} | params: {n_params:,}")
+      
