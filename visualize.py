@@ -56,10 +56,7 @@ CHANNEL_NAMES = [
 HIGHLIGHT_CHANNELS = {"C3", "Cz", "C4", "Cp3", "Cpz", "Cp4"}
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # Load model
-# ─────────────────────────────────────────────────────────────────────────────
-
 def load_brainwave(subject_id: int) -> BrainWave:
     """Load saved BrainWave checkpoint for one subject."""
     ckpt = os.path.join(CHECKPOINT_DIR, f"brainwave_S{subject_id:03d}.pt")
@@ -71,10 +68,7 @@ def load_brainwave(subject_id: int) -> BrainWave:
     return model
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # 1. Temporal attention plot
-# ─────────────────────────────────────────────────────────────────────────────
-
 def extract_attention_per_class(
     model: BrainWave,
     X_test: np.ndarray,
@@ -173,10 +167,7 @@ def plot_temporal_attention(
     print(f"Saved attention plot: {save_path}")
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # 2. Spatial filter plot
-# ─────────────────────────────────────────────────────────────────────────────
-
 def plot_spatial_filters(model: BrainWave, subject_id: object, save_path: str):
     """
     Visualize the CNN spatial filter weights as a bar chart over electrode index.
@@ -226,10 +217,7 @@ def plot_spatial_filters(model: BrainWave, subject_id: object, save_path: str):
     print(f"Saved spatial filter plot: {save_path}")
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # Main
-# ─────────────────────────────────────────────────────────────────────────────
-
 def visualize_subject(subject_id: int):
     """Generate both plots for one subject."""
     model = load_brainwave(subject_id)
