@@ -31,9 +31,7 @@ from dataset import load_subject_data, make_loader, subject_dependent_split
 from models import get_model
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # Load and summarize CSV results
-# ─────────────────────────────────────────────────────────────────────────────
 
 def load_all_results() -> pd.DataFrame:
     """Load all result CSVs from RESULTS_DIR and concatenate."""
@@ -91,9 +89,7 @@ def print_summary_table(df: pd.DataFrame):
     print("="*70)
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # Confusion matrix (averaged across subjects for BrainWave subject-dependent)
-# ─────────────────────────────────────────────────────────────────────────────
 
 def compute_mean_confusion_matrix() -> np.ndarray:
     """
@@ -161,9 +157,9 @@ def compute_mean_confusion_matrix() -> np.ndarray:
     return mean_cm
 
 
-# ─────────────────────────────────────────────────────────────────────────────
+
 # Depth ablation summary
-# ─────────────────────────────────────────────────────────────────────────────
+
 
 def print_depth_ablation(df: pd.DataFrame):
     """Print accuracy vs Transformer depth from ablation results."""
@@ -181,9 +177,7 @@ def print_depth_ablation(df: pd.DataFrame):
         print(f"  {int(L):>8} {row['mean']:>11.1%} {row['std']:>9.1%}")
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # Inference speed
-# ─────────────────────────────────────────────────────────────────────────────
 
 def measure_inference_speed(n_runs: int = 100):
     """Measure time to classify one 3-second EEG epoch with BrainWave."""
@@ -216,9 +210,7 @@ def measure_inference_speed(n_runs: int = 100):
     return ms_per_epoch
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # Main
-# ─────────────────────────────────────────────────────────────────────────────
 
 def main():
     df = load_all_results()

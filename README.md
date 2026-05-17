@@ -391,8 +391,8 @@ No code was copied from these repositories. All model implementations are writte
 | Name | Email | Contributions |
 |---|---|---|
 | Lahari Pydikondala | lahari.pydikondala@sjsu.edu | `download_data.py`, `preprocess.py`, `baselines.py`, EDA |
-| Jagadeesh Venkata Kumar Penubothu | Jagadeeshvenkatakumar.penubothu@sjsu.edu | `models.py`, `train.py`, `dataset.py`, `run_all.py` |
-| Charan Venkata Satya Nagadeep Patrini | venkatasatyacharannagadeep.patrini@sjsu.edu | `evaluate.py`, `visualize.py`, CNN+BiLSTM, subject-independent eval |
+| Jagadeesh Venkata Kumar Penubothu | Jagadeeshvenkatakumar.penubothu@sjsu.edu | `models.py`, `visualize.py`, `run_all.py`,`evaluate.py`, CSP + SVM, CSP + Random Forest |
+| Charan Venkata Satya Nagadeep Patrini | venkatasatyacharannagadeep.patrini@sjsu.edu | `dataset.py`,`train.py`,`models.py`, CNN+BiLSTM, subject-independent eval |
 
 ---
 
