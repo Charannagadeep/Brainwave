@@ -7,6 +7,16 @@ San José State University, Spring 2026
 
 **Team:** Lahari Pydikondala · Jagadeesh Venkata Kumar Penubothu · Charan Venkata Satya Nagadeep Patrini
 
+![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![MNE](https://img.shields.io/badge/MNE--Python-EEG-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+
+**Highlights**
+- **72.3%** subject-dependent and **61.1%** subject-independent accuracy on 4-class motor imagery (103 subjects), beating CSP + SVM/RF and CNN + BiLSTM baselines
+- Hybrid spatial CNN + 4-layer Transformer (266K parameters) that learned the textbook ERD timing and motor-cortex electrodes without being told
+- **4.2 ms** inference per trial on a T4 GPU, well under the 100 ms real-time BCI threshold
+
 ---
 
 ## What is this?
